@@ -28,7 +28,7 @@ class Quiz {
     }
   }
 
-  play(){
+  
   // escreva aqui o código para ocultar os elementos da questão
     // escreva o código aqui para mudar a cor de fundo
     // escreva o código para exibir um cabeçalho indicando o resultado do Quiz
@@ -37,88 +37,34 @@ class Quiz {
     // escreva aqui o código para adicionar uma nota
     // escreva o código para destacar o competidor que respondeu corretamente
 
-/*question.HIDE();
-    background("Yellow");
-    fill(0);
-    textSize(30);
-    text("Resultado do Questionário",340, 50);
-    
-    Contestant.getPlayerInfo();
-    
-    if(allContestants !== indefinido){
-     
-      
-      fill("Blue");
-      textSize(20);
-      Text("*NOTA: O competidor que respondeu corretamente é destacado em verde",130,230);
-
-      for(var plr in allContestants){
-        
-        var correctAns = "2";
-        if (correctAns === allContestants[plr].answer)
-          fill("Green")
-        else
-          fill("red");
+    play(){
+      question.hide();
+      background("Yellow");
+      fill(0);
+      textSize(30);
+      text("Resultado do Questionário",340, 50);
+      text("-------------------------",320, 65);
+      Contestant.getPlayerInfo();
+      if(allContestants !== undefined){
+        debugger;
+        var display_Answers = 230;
+        fill("Blue");
+        textSize(20);
+        text("*NOTA: O competidor que respondeu corretamente é destacado em verde",130,230);
+  
+        for(var plr in allContestants){
+          debugger;
+          var correctAns = "2";
+          if (correctAns === allContestants[plr].answer)
+            fill("Green")
+          else
+            fill("red");
+  
+          display_Answers+=30;
           textSize(20);
           text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers)
+        }
       }
-    }*/
-
-
-    /*question.hide();
-    background("Yellow");
-    fill(0);
-    textSize(30);
-    text("Resultado do Questionário",340, 50);
-    
-    Contestant.getPlayerInfo();
-    
-    if(allContestants !== undefined){
-     
-      
-      fill("Blue");
-      textSize(20);
-      text("*NOTA: O competidor que respondeu corretamente é destacado em verde",130,230);
-
-      for(var plr in allContestants){
-        
-        var correctAns = "2";
-        if (correctAns === allContestants[plr].answer)
-          fill("Green")
-        else
-          fill("red");
-          textSize(20);
-          text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers)
-      }
-    }*/
-
-
-    /*question.hide();
-    BACKGROUND("Yellow");
-    fill(0);
-    textSize(30);
-    text("Resultado do Questionário",340, 50);
-    
-    Contestant.getPlayerInfo();
-    
-    if(allContestants !== indefinido){
-     
-      
-      fill("Blue");
-      textSize(20);
-      text("*NOTA: O competidor que respondeu corretamente é destacado em verde",130,230);
-
-      FOR(var plr in allContestants){
-        
-        var correctAns = "2";
-        else (correctAns === allContestants[plr].answer)
-          fill("Green")
-        if
-          fill("red");
-          textSize(20);
-          text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers)
-      }
-    }*/
     
   }
 
